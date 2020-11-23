@@ -15,7 +15,7 @@ public class BestLoanRates {
         System.out.println("Hello " + name);
 
         // Getting loan terms in year
-        System.out.println("Enter the loan terms (in years)");
+        System.out.println("Enter the loan term (in years)");
         int loanTermsInYear = scanner.nextInt();
 
         // Processing the best rate for input loan terms
