@@ -21,7 +21,7 @@ public class BestLoanRates {
         // Processing the best rate for input loan terms
         float bestRate = getRates(loanTermsInYear);
         System.out.println(bestRate==0.0f ? ("No available rates for term: " + loanTermsInYear +
-                "years"):("Best Available Rate: " + bestRate + "%"));
+                " years"):("Best Available Rate: " + bestRate + "%"));
 
         scanner.close();
     }
