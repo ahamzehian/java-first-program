@@ -23,7 +23,7 @@ public class Finance {
         // Check if the correct argument entered for correct command
         boolean isValidCommand = validateCommandArguments(args);
         if(!isValidCommand){
-            commandsToUsage.get(command);
+            System.out.println(commandsToUsage.get(command));;
             return;
         }
 
