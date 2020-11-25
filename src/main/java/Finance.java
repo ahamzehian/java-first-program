@@ -9,7 +9,7 @@ import java.util.Map;
 public class Finance {
 
     public final static String BEST_LOAN_RATES = "bestLoanRates";
-    public final static String SAVING_CALCULATOR = "savingCalculator";
+    public final static String SAVINGS_CALCULATOR = "savingCalculator";
     public final static String MORTGAGE_CALCULATOR = "mortgageCalculator";
 
     public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class Finance {
     // A map of what each command does
     public final static Map<String, String> commandsToUsage = new HashMap<>(Map.of(
             BEST_LOAN_RATES, "usage: bestLoanRates",
-            SAVING_CALCULATOR, "usage: savingCalculator <credits separated by ','> <debits separated by ','>",
+            SAVINGS_CALCULATOR, "usage: savingsCalculator <credits separated by ','> <debits separated by ','>",
             MORTGAGE_CALCULATOR, "usage: mortgageCalculator <loanAmount> <termInYears> <annualRate>"
     ));
 
@@ -44,7 +44,7 @@ public class Finance {
         switch (args[0]){
             case BEST_LOAN_RATES:
                 return args.length == 1;
-            case SAVING_CALCULATOR:
+            case SAVINGS_CALCULATOR:
                 return args.length == 3;
             case MORTGAGE_CALCULATOR:
                 return args.length == 4;
@@ -59,7 +59,7 @@ public class Finance {
                 System.out.println("Finding the best loan rates ...");
                 BestLoanRates.main(arguments);
                 return;
-            case SAVING_CALCULATOR:
+            case SAVINGS_CALCULATOR:
                 System.out.println("Finding your net savings ...");
                 SavingsCalculator.main(arguments);
                 return;
